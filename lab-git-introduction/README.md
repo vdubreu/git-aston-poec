@@ -31,3 +31,60 @@ sync up the changes from their respective local repositories. It
 corresponds to what you would traditionally think of as the server in
 other source management systems.
 ![git_one_picture](../screenshot/git_one_picture.png)  
+
+## Set the environment auto-completion and prompt
+After getting the raw version of the file, you can download that page as
+the file git-completion.bash to your local system. Once the script is
+downloaded, you add a line like the following into your .bashrc file
+(create the file if needed):
+```shell
+cd 
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+mv git-completion.bash ~/.git-completion.bash
+wget  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+chmod +x git-prompt.sh 
+./git-prompt.sh
+vi ~/.bashrc
+#add this line
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+## Add at the end of file
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+```
+
+## git config -- Telling git who you are
+The first two pieces
+are simply issuing the config command from git. After that is an
+option, global, (preceded by two hyphens because you are spelling it
+out).  
+There are 3 levels of configuration: system, global and local:  
+```System``` is st at machine level   
+``Global`` applies to all repositories for a particular user, unless overridden
+at the local level.  
+```Local``` sets the configuration value at the local level means that the setting 
+only applies in the context of one repository.
+
+![git_config](../screenshot/git_config.png)
+
+```shell
+git config --global user.name "your name"
+git config --global user.mail "email address"
+```
+To undo an option  
+```shell
+git config --unset --global user.name
+```
+List
+```shell
+git config --list
+# set the default editor
+git config --global core.editor vim  # for example
+git config --global core.editor nano
+# End of line settings
+git config --global core.autocrlf=true # for Windows user
+git config --global core.autocrlf=input # for Linux user
+# Alias 
+git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
