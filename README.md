@@ -17,9 +17,10 @@ sudo yum -y install python3
 ### Set up a python virtualenv, and install ansible
 ```shell script
   # in the jenkins-pic directory 
-  git clone http:
+  git clone   https://github.com/<your_github_account>/git-aston-poec.git
   cd git-aston-poec
   python3 -m venv venv  # install virtualenv module dans la directory venv
+  python -V # check python version
   source venv/bin/activate # activate the python virtualenv
   pip3 install wheel  # install pip package wheel for permission usage
   pip3 install --upgrade pip

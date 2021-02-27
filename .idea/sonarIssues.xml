@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/INSTALL_GIT.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/INSTALL_GIT_PROJECT.md">
           <value>
             <set />
           </value>
@@ -19,6 +29,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../kubernetes/k8s-webforce3/storageOS/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../kubernetes/use-cases/jenkins/20-statefulset.yaml">
           <value>
             <set />
           </value>
