@@ -1,4 +1,4 @@
-# Install a git project  SERVER and CLIENT
+# Install a git project SERVER and CLIENT
 
 ## Set up a git server on a remote machine
 ```shell
@@ -12,10 +12,11 @@ git init --bare # init a git bare repository
 ls -alrt # check
 ```
 ## Set up the git client project on your local host in a directory not 
-in your current pycharm project. 
+in your current pycharm directory project. 
 ```shell
 cd ..  # move up 
-mkdir project-1  # create the project directory
+mkdir project-1  # create the project directory 
+cd project-1
 git init   # create the git environment
 # non-bare repo has a .git folder
 ls -alrt  #  check 

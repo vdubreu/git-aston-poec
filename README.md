@@ -25,7 +25,7 @@ sudo yum -y install python3
   pip3 install wheel  # install pip package wheel for permission usage
   pip3 install --upgrade pip
   pip3 install ansible # install ansible
-  ansible --version  # check, should be version 2.10.5
+  ansible --version  # check, should be version 2.10.6
 ```
 
 ### Run the playbook

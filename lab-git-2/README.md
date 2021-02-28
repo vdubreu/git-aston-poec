@@ -8,7 +8,7 @@ between the various levels along the way.
 ```shell
 # cd to your project-1
 git status
-git status -status
+git status -s
 echo content > file3.c
 git status
 git status -s 

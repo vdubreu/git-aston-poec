@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="172.81.181.15" id="4b65c62c-63e1-4204-9c6d-5246949e9180" keyPath="D:\project\id_rsa" port="22" customName="git-aston" nameFormat="CUSTOM" username="centos">
+      <sshConfig host="170.75.162.24" id="4b65c62c-63e1-4204-9c6d-5246949e9180" keyPath="D:\project\id_rsa" port="22" customName="git-aston" nameFormat="CUSTOM" username="centos">
         <option name="customName" value="git-aston" />
       </sshConfig>
     </configs>
