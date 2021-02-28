@@ -42,21 +42,24 @@ cd
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 mv git-completion.bash ~/.git-completion.bash
 wget  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-chmod +x git-prompt.sh 
-./git-prompt.sh
-vi ~/.bashrc
-#add this line
+cp git-prompt.sh ~/.git-prompt.sh 
+vi ~/.bashrc  # or you can use nano
+#add these lines
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+if [ -f ~/.git-prompt.sh ]; then
+  . ~/.git-prompt.sh
+fi
 ## Add at the end of file
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#save the file
+bash -l # reload the bash
 ```
 
 ## git config -- Telling git who you are
-The first two pieces
-are simply issuing the config command from git. After that is an
-option, global, (preceded by two hyphens because you are spelling it
+The first two pieces are simply issuing the config command from git. 
+After that is an  option, global, (preceded by two hyphens because you are spelling it
 out).  
 There are 3 levels of configuration: system, global and local:  
 ```System``` is st at machine level   
@@ -82,9 +85,7 @@ git config --list
 git config --global core.editor vim  # for example
 git config --global core.editor nano
 # End of line settings
-git config --global core.autocrlf=true # for Windows user
-git config --global core.autocrlf=input # for Linux user
-# Alias 
-git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global core.autocrlf true # for Windows user
+git config --global core.autocrlf input # for Linux user
+
 ```
