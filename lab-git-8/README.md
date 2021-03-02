@@ -53,7 +53,7 @@ git log --oneline
 ```
 We are now ready to merge the branch back into the master branch
 ```shell
-git chechkout master
+git checkout master
 git merge cpick 
 ```
 once the merge is complete , push the changes out to the remote. 

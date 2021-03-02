@@ -10,7 +10,7 @@ git clone https://github.com/<my_github_account>/calc2.git
 # create another project
 git clone https://github.com/<my_github_account>/calc2.git calc_other
 # check the branch
-cd  calc2.git
+cd  calc2
 git branch -r 
 git branch -av
 git remote add upstream https://github.com/master-afip/calc2.git

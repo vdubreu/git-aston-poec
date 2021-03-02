@@ -3,7 +3,7 @@ working with submodules
 in a super_calc directory
 
 ```shell
-git submodule add https://github.com/<your github_userid>/sub_ui sub_ui
+git submodule add https://github.com/<your github_userid>/sub_ui.git sub_ui
 ls 
 git status
 git show :.gitmodules
@@ -13,7 +13,7 @@ and data to your local and remote repositories. Run the following
 commands:
 
 ```shell
-git commit -m "Add submodules sub_ui"
+git commit -m "Add submodule sub_ui"
 git push
 ```
 
