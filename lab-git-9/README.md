@@ -29,7 +29,7 @@ git commit -am "Updating title"
 cd ../super_calc
 git branch 
 git log --oneline features
-git worktree list
+git worktree list 
 rm -Rf ../super_calc_features
 git worktree prune
 ```

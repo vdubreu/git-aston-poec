@@ -41,7 +41,7 @@ downloaded, you add a line like the following into your .bashrc file
 cd 
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 mv git-completion.bash ~/.git-completion.bash
-wget  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+:
 cp git-prompt.sh ~/.git-prompt.sh 
 vi ~/.bashrc  # or you can use nano
 #add these lines
