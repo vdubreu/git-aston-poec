@@ -92,7 +92,6 @@ notes=alsoCherryPick. This can be done by configuring Git as follows:
 
 ```git config notes.displayRef "refs/notes/alsoCherryPick"```
 
-:
 
 
 
