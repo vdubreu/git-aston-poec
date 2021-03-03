@@ -35,7 +35,9 @@ sudo yum -y install python3
 
 Please log out and log in again of your shell screen for 
 the changes take effect. 
+
 ```shell script
-   docker ps    # check if docker is up and running 
+  docker-compose up -d
+  docker ps    # check if docker is up and running 
 ```
 
