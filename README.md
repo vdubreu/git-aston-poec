@@ -30,7 +30,10 @@ sudo yum -y install python3
 
 ### Run the playbook
 ```
-  ansible-playbook -i inventory  playbook.yml
+ansible-playbook -i inventory  playbook.yml
+```
+```shell script 
+docker-compose up -d
 ```
 
 Please log out and log in again of your shell screen for 
