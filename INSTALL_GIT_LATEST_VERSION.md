@@ -31,3 +31,11 @@ PATH=$PATH:/usr/local/bin:$HOME/.local/bin:$HOME/bin
 source ~/.bash_profile  # apply all changes defined in your .bashrc 
 git --version # Check 
 ```
+## Install git subtree
+```shell 
+ cd contrib/subtree
+ make
+ sudo make prefix=/usr/local/ install
+```
+
+
